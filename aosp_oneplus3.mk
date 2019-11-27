@@ -25,6 +25,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Security patch level
+PLATFORM_SECURITY_PATCH_OVERRIDE := 2019-10-01
+	
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH_OVERRIDE)
+
 PRODUCT_NAME := aosp_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
@@ -32,6 +37,12 @@ PRODUCT_BRAND := OnePlus
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3:8.0.0/OPR1.170623.032/02281230:user/release-keys"
-
 TARGET_VENDOR := oneplus
+
+CUSTOM_BUILD_TYPE := Q
+
+# Build fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+PRIVATE_BUILD_DESC="OnePlus3-user 8.0.0 OPR1.170623.032 31 release-keys"
+
+BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3T:8.0.0/OPR1.170623.032/02281230:user/release-keys"

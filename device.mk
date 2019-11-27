@@ -424,6 +424,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
+    init.safailnet.rc \
     init.qti.ims.sh \
     init.recovery.qcom.rc \
     init.target.rc \

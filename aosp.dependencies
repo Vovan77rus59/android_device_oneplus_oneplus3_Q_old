@@ -1,14 +1,14 @@
 [
   {
-    "repository":  "PlayFriik/android_kernel_oneplus_msm8996",
+    "repository":  "Vovan77rus59/android_kernel_oneplus_msm8996_Q",
     "target_path": "kernel/oneplus/msm8996",
-    "branch":      "lineage-17.0",
+    "branch":      "ten",
     "remote":      "github"
   },
   {
-    "repository":  "PlayFriik/proprietary_vendor_oneplus",
+    "repository":  "Vovan77rus59/proprietary_vendor_oneplus_Q",
     "target_path": "vendor/oneplus",
-    "branch":      "lineage-17.0",
+    "branch":      "ten",
     "remote":      "github"
   },
   {
